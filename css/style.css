@@ -1,0 +1,554 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+/* HEADER SIDEBAR */
+
+.header .side_navbar {
+    background-image: url("./assets/hamburger_background.png");
+    border-radius: 0px 0px 25px 0px;
+    position: fixed;
+    height: calc(100% - 56px);
+    width: 280px;
+    transition: all 0.5s ease;
+    left: -280px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    background-color: #FFFFFF;
+}
+
+.header .side_navbar .side_navbar_header {
+    margin-bottom: 150px;
+    display: inline-block;
+    padding: 2px;
+    margin: 2px;
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.side_navbar_header_text {
+    vertical-align: middle; 
+    display: inline-block; 
+    width: 160px;
+    text-align: right;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #FCA623;
+}
+
+.header .side_navbar .side_navbar_header img {
+    vertical-align: middle;
+}
+
+.header .side_navbar .side_navbar_header .krop {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #767676;
+}
+
+.header .side_navbar hr {
+    margin-left: 25%;
+    margin-top: 25px;
+    border: none;
+    width:50%;
+    border-radius: 5px;
+    height: 1px;
+    position: relative;
+    bottom: 10px;
+
+    background-color: #767676;
+    color: #767676;
+}
+
+.header .side_navbar ul li a {
+    display: block;
+    cursor: pointer;
+    padding: 13px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #767676;
+}
+
+.social_networks {
+    margin-top: 15px;
+    margin-left: 25%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 96%;
+
+    color: #767676;
+}
+
+.social_networks_icons {
+    margin-top: 15px;
+    display: flex;
+    width: 120px;
+    justify-content: space-around;
+}
+
+.header .side_navbar .Image {
+    display: inline-block;
+}
+
+body.active .header .side_navbar {
+    left: 0px;
+}
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header .top_navbar {
+    position: relative;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #FFFFFF;
+}
+
+.header .top_navbar .hamburger a {
+    cursor: pointer;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    margin-left: 34px;
+    font-size: 23px;
+
+    color: #FF9F0D;
+}
+
+.header .top_navbar .top_navbar_leftSide p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    margin-right: 900px;  
+}
+
+.header .top_navbar .top_navbar_leftSide p .Phone {
+    font-family: 'Montserrat';
+    font-style: normal;
+    margin-left: 36px;
+
+    color: #FF9F0D;
+}
+
+.header .top_navbar .top_navbar_center ul li a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 113.5%;
+    text-align: center;
+
+    color: #767676;
+}
+
+.header .top_navbar .top_navbar_center ul li a .item_secondName {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: #FCA623;
+}
+
+.header .top_navbar .top_navbar_rightSide {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 300px;
+}
+
+.header .top_navbar .top_navbar_rightSide ul li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 185.5%;
+
+    color: #000000; 
+}
+
+.header .top_navbar .top_navbar_rightSide ul li a .Image {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header .top_navbar li {
+    float: left;   
+}
+
+/* BANER */
+
+.baner a p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 113.5%;
+
+    color: #FFFFFF;
+}
+
+.baner .background_image {
+    width: 100%;
+}
+
+.baner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 113.5%;
+
+    color: #FFFFFF;
+}
+
+/* POPULAR DISHES */
+
+.delivery_text {
+    border-radius: 0px 15px;
+    padding: 0px 5px 0px 5px;
+
+    color: #FCA623;
+    background: #FFFFFF;
+}
+
+.scrollbar_popular_dishes {
+    display: flex;
+    justify-content: space-around;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scrollbar_popular_dishes .scrollbar_button {
+    background-color: #FFFFFF;
+}
+
+.button {
+    border-radius: 7px;
+    float: right;
+    margin-right: 25px;
+    margin-top: -30px;
+
+}
+
+.scrollbar_title {
+    display: flex;
+    width: calc(100% - 69%);
+    justify-content: flex-end;
+    padding-right: 82px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 185.5%;
+
+    color: #767676;
+}
+
+/* BREAKFAST */
+
+.breakfasts_title {
+    margin-bottom: 73px;
+}
+
+.breakfasts_menu {
+    display: flex;
+    width: 674px;
+    height: 52px;
+    justify-content: flex-end;
+    padding-right: 82px;
+    border-radius: 0px 25px 0px 0px;
+    box-shadow: 7px 49px 20px rgba(0, 0, 0, 0.01), 4px 28px 17px rgba(0, 0, 0, 0.05), 2px 12px 12px rgba(0, 0, 0, 0.09), 0px 3px 7px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 185.5%;
+
+    background: #FF9F0D;
+    color: #FFFFFF;
+}
+
+.col  {
+    display: inline-block;
+    height: 312px;
+    border-radius: 0px 25px 15px 15px;
+
+    background: #FFFFFF;
+    border: 0.5px solid #CECECE;
+}
+
+.grid_breakfasts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1400px;
+    height: 1411px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.img-Breakfast {
+    padding-bottom: 20px;
+}
+
+.card-title {
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 96%;
+    padding-bottom: 6px;
+
+    color: #767676;
+} 
+
+.card-text {
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 96%;
+    padding-bottom: 20px;
+
+    color: #B1B1B1;
+}
+
+.text-muted {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 96%;
+
+    color: #767676;
+}
+
+/* SALADS */
+
+.salads_title {
+    margin-bottom: 73px;
+}
+
+.salads_menu {
+    display: flex;
+    width: 674px;
+    height: 52px;
+    justify-content: flex-end;
+    padding-right: 82px;
+    border-radius: 0px 25px 0px 0px;
+    box-shadow: 7px 49px 20px rgba(0, 0, 0, 0.01), 4px 28px 17px rgba(0, 0, 0, 0.05), 2px 12px 12px rgba(0, 0, 0, 0.09), 0px 3px 7px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 185.5%;
+    
+    background: #FF9F0D;
+    color: #FFFFFF;
+}
+
+.grid_salads {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1400px;
+    height: 1411px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BANER FOOTER */
+
+.scroll_button button {
+    background: #FF9F0D;
+    box-shadow: 7px 49px 20px rgba(0, 0, 0, 0.01), 4px 28px 17px rgba(0, 0, 0, 0.05), 2px 12px 12px rgba(0, 0, 0, 0.09), 0px 3px 7px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 185.5%;
+    width: 220px;
+    text-align: center;
+
+
+    color: #FFFFFF;
+}
+
+.scroll_button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.baner_footer img {
+    background-image: url("./assets/background.png");
+}
+
+.baner_footer {
+    padding-top: 300px;
+    position: relative;
+}
+
+.baner_footer .center {
+    padding-top: 300px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.baner_footer a p {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 150%;
+
+    color: #FFFFFF; 
+}
+
+.baner_footer button {
+    background: #FFFFFF; 
+    border-radius: 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    width: 260px;
+    font-size: 24px;
+    line-height: 185.5%;
+
+
+    color: #1E1E1E;
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 79px;
+    min-width: 100%;
+    padding: auto;
+    margin: auto;
+}
+
+.footer .footer_navbar {
+    height: 79px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #2E2E2E;
+}
+
+.footer .footer_navbar .footer_leftSide img {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    margin-left: 34px;
+    font-size: 23px;
+    margin-right: 31px; 
+}
+
+.footer .footer_navbar .footer_leftSide p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-decoration: none;
+    float: left;
+    padding-top: 20px;
+
+    color: #FFFFFF;
+}
+
+.footer .footer_navbar .footer_center li {
+    float: left;
+    padding-left: 20px;
+}
+
+.footer .footer_navbar .footer_center .logo_PrivatBank{
+    width: 35px;
+}
+
+.footer .footer_navbar .footer_center ul li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 185.5%;
+
+    color: #FFFFFF;
+}
+
+.footer .footer_navbar .footer_center ul li a .payment_method {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 185.5%;
+
+    color: #FFFFFF;
+
+}
+
+.social_networks_icons_footer {
+    display: flex;
+    width: 250px;
+    padding-right: 20px;
+    justify-content: space-around;
+    
+}
+
+.social_networks_icons_footer .author {
+    margin-top: 5%;
+    font-family: 'Montserrat';
+    font-style: normal;
+
+    color: #FFFFFF;
+}
